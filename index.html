@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head">
+        <img src="img/logo.png" alt="" class="logo">
+        <ul class="head_list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#me">About me</a></li>
+            <li><a href="#Photos">Photos</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </header>
+
+    <div class="first_block" id="home">
+        <div class="shadow">
+            <div class="first_block_content">
+                <div class="block_content">
+                    <p class="name">Hello, My name is Baiel and I am a programmer</p>
+                </div>
+                <div class="image_">
+                    <img class = "main_photo" src="img/photo.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="button_1">
+                <button onclick="change_bg()">Change back-ground</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="second_block" id="me">
+        <div class="shadow1">
+
+            <div class="title"><span>About me</span></div>
+            <div class="describe_1">
+                <div class="facts_1" id="fact1">My full name is Abdyllaev Baiel, I am kyrgyz and I live in Bishkek</div>
+                <div class="facts_2" id="fact2">I am a student of college Ala Too. I am studying for software of computer facilities</div>
+
+            </div>
+            <div class="describe_2">
+                <div class="facts_3" id="fact3">In my free time I like play footbal, watch footbal matches as well, ecpesially chelsea's</div>
+                <div class="facts_4" id="fact4">I like web developing, and in future I am going to become a fullstack Defeloper</div>
+            </div>
+            <div class="button_2">
+                <button onclick="show_facts()">Show facts</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function show_facts(){
+            document.getElementById("fact1").style.color="white";
+            document.getElementById("fact2").style.color="black";
+            document.getElementById("fact3").style.color="white";
+            document.getElementById("fact4").style.color="white";
+        }
+        function change_bg(){
+            document.getElementById("home").style.backgroundImage="url(img/bg2.jpg)";
+        }
+    </script>
+    <div class="third_block" id="Photos">
+        <div class="shadow2">
+            <div class="title_2">
+                Photos
+            </div>
+            <div class="photo_1block">
+                <img class="all-photos" src="img/l3.jpg" alt="">
+                <img class="all-photos" src="img/l2.jpg" alt="">
+            </div>
+            <div class="photo_2block">
+                <img class="all-photos" src="img/l1.jpg" alt="">
+                <img class="all-photos" src="img/l4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="forth_block" id="contacts">
+        <div class="title_3">Contacts</div>
+        <div class="whatsapp-instagram">
+            <a href="https://api.whatsapp.com/send/?phone=996554373848&text&app_absent=0">
+                <img class="photo_call" src="img/call.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/p/CLHGJ-wp4A2vxVOh3mi6snz4BfmHl5Wejc6yqQ0/?utm_medium=share_sheet">
+                <img class="instagram_photo" src="img/instagram.png" alt="">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
